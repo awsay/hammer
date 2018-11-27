@@ -1,8 +1,8 @@
-# jeeves
-
-[![Build Status](https://travis-ci.org/kanjielu/jeeves.svg?branch=master)](https://travis-ci.org/kanjielu/jeeves)
+# hammer
 
 A smart WeChat bot.
+
+[基于jeeves做的web版微信消息控制工具](https://github.com/kanjielu/jeeves)
 
 [English Docs](https://github.com/kanjielu/jeeves/blob/master/README.md)
 
@@ -18,9 +18,9 @@ mvn spring-boot:run
 
 启动后，会看到如下的日志信息：
 
-![alt text](https://github.com/kanjielu/jeeves/blob/master/images/login1.png?raw=true "Await Scanning")
+输入http://127.0.0.1:8080/login显示微信登录的二维码
 
-扫过二维码，点击确认登录后
+扫过二维码，点击确认登录后跳转到配置页面
 
 ![alt text](https://github.com/kanjielu/jeeves/blob/master/images/login2.png?raw=true "Login Successfully")
 
