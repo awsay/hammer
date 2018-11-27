@@ -1,0 +1,89 @@
+2018-11-20 00:36:51.542 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: syncCheckResponse selector = 0
+	at com.hammer.lei.service.SyncServie.listen(SyncServie.java:74)
+	at com.hammer.lei.service.LoginService.login(LoginService.java:167)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+2018-11-20 01:03:30.947 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: SendMsgResponse ret = 1101
+	at com.hammer.lei.utils.WechatUtils.checkBaseResponse(WechatUtils.java:12)
+	at com.hammer.lei.service.WechatHttpService.sendText(WechatHttpService.java:62)
+	at com.hammer.lei.MessageHandlerImpl.replyChatRoomMessage(MessageHandlerImpl.java:156)
+	at com.hammer.lei.MessageHandlerImpl.onReceivingChatRoomTextMessage(MessageHandlerImpl.java:37)
+	at com.hammer.lei.service.SyncServie.onNewMessage(SyncServie.java:132)
+	at com.hammer.lei.service.SyncServie.listen(SyncServie.java:61)
+	at com.hammer.lei.service.LoginService.login(LoginService.java:167)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+2018-11-20 01:04:49.787 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: com.google.zxing.NotFoundException
+	at com.hammer.lei.service.LoginService.login(LoginService.java:170)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+Caused by: com.google.zxing.NotFoundException: null
+2018-11-20 09:51:52.811 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: com.google.zxing.NotFoundException
+	at com.hammer.lei.service.LoginService.login(LoginService.java:170)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+Caused by: com.google.zxing.NotFoundException: null
+2018-11-20 16:40:22.972 [Thread-593] ERROR com.hammer.lei.MessageHandlerImpl -ChatRoom replyMessage error!
+com.twilio.exception.ApiException: Account not authorized to call +8613627268272. Perhaps you need to enable some international permissions: https://www.twilio.com/console/voice/calls/geo-permissions/low-risk
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:538)
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:25)
+	at com.twilio.base.Creator.create(Creator.java:45)
+	at com.hammer.lei.service.TwilioService.callSomebody(TwilioService.java:28)
+	at com.hammer.lei.MessageHandlerImpl$1.run(MessageHandlerImpl.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-20 16:48:57.186 [Thread-594] ERROR com.hammer.lei.MessageHandlerImpl -ChatRoom replyMessage error!
+com.twilio.exception.ApiException: Account not authorized to call +8613627268272. Perhaps you need to enable some international permissions: https://www.twilio.com/console/voice/calls/geo-permissions/low-risk
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:538)
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:25)
+	at com.twilio.base.Creator.create(Creator.java:45)
+	at com.hammer.lei.service.TwilioService.callSomebody(TwilioService.java:28)
+	at com.hammer.lei.MessageHandlerImpl$1.run(MessageHandlerImpl.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)

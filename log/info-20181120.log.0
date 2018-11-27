@@ -1,0 +1,925 @@
+2018-11-20 00:36:18.441 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 72822 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 00:36:18.451 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 00:36:18.578 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:36:18 CST 2018]; root of context hierarchy
+2018-11-20 00:36:20.169 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 00:36:21.451 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 00:36:21.476 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 00:36:21.481 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 00:36:21.707 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 00:36:21.708 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3130 ms
+2018-11-20 00:36:21.862 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 00:36:21.869 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 00:36:21.870 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 00:36:21.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 00:36:21.871 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 00:36:23.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:36:18 CST 2018]; root of context hierarchy
+2018-11-20 00:36:23.366 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 00:36:23.370 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 00:36:23.371 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 00:36:23.411 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:36:23.412 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:36:23.472 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:36:24.357 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 00:36:24.675 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 00:36:24.795 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 00:36:24.802 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 00:36:24.802 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 00:36:26.635 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 00:36:26.820 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 00:36:27.601 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 00:36:27.749 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 00:36:29.649 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 00:36:29.649 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 00:36:29.678 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-11-20 00:36:34.333 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 00:36:35.966 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 00:36:36.317 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 00:36:36.399 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 00:36:37.154 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 00:36:37.232 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 00:36:40.345 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 00:36:40.346 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 00:36:40.373 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 00:36:40.890 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 3
+2018-11-20 00:36:40.891 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 00:36:40.892 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 00:36:40.893 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 00:36:41.101 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:36:51.523 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 1101, selector = 0
+2018-11-20 00:36:51.532 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-20 00:36:51.542 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: syncCheckResponse selector = 0
+	at com.hammer.lei.service.SyncServie.listen(SyncServie.java:74)
+	at com.hammer.lei.service.LoginService.login(LoginService.java:167)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+2018-11-20 00:36:51.545 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:36:18 CST 2018]; root of context hierarchy
+2018-11-20 00:36:51.547 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-11-20 00:36:51.548 [main] WARN  c.c.jeeves.service.CleanupService -[*] system is being destroyed
+2018-11-20 00:36:51.548 [main] WARN  c.c.jeeves.service.CleanupService -[*] logging out
+2018-11-20 00:39:01.848 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 72849 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 00:39:01.858 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 00:39:01.947 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:39:01 CST 2018]; root of context hierarchy
+2018-11-20 00:39:03.255 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 00:39:04.178 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 00:39:04.191 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 00:39:04.192 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 00:39:04.306 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 00:39:04.306 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2360 ms
+2018-11-20 00:39:04.474 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 00:39:04.479 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 00:39:04.480 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 00:39:04.480 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 00:39:04.481 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 00:39:05.276 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:39:01 CST 2018]; root of context hierarchy
+2018-11-20 00:39:05.344 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 00:39:05.349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 00:39:05.349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 00:39:05.390 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:39:05.390 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:39:05.440 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 00:39:06.064 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 00:39:06.376 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 00:39:06.462 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 00:39:06.467 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 00:39:06.467 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 00:39:08.067 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 00:39:08.238 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 00:39:08.793 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 00:39:08.905 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 00:39:13.855 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 00:39:13.856 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 00:39:13.877 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-11-20 00:39:17.550 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 00:39:18.775 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 00:39:19.064 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 00:39:19.145 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 00:39:19.706 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 00:39:19.790 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 00:39:22.424 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 00:39:22.424 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 00:39:22.437 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 00:39:22.777 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 3
+2018-11-20 00:39:22.778 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 00:39:22.779 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 00:39:22.779 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 00:39:22.922 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:39:27.166 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:39:27.245 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 00:39:27.245 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@8aa1e968f3da1251cb37c96a912c515d4ac1c91be220d03a685a42981ccbf5ae
+2018-11-20 00:39:27.248 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @6040b18fa4ce603f250ffc4b7f5848e58db017487c967a5bde6363816329c48c
+2018-11-20 00:39:27.248 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @075c701a677174777c99b8fb34a6be32
+2018-11-20 00:39:27.248 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+211
+2018-11-20 00:39:34.444 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:39:45.381 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:39:56.536 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:40:21.711 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:40:46.780 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:41:11.851 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:41:36.940 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:42:02.100 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:42:27.138 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:42:52.238 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:43:17.309 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:43:42.349 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:44:07.388 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:44:32.522 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:44:57.556 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:45:22.595 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:45:47.735 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:46:12.773 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 00:46:13.830 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:46:16.498 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:46:17.616 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:46:28.054 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 00:46:28.131 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 00:46:28.131 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@8aa1e968f3da1251cb37c96a912c515d4ac1c91be220d03a685a42981ccbf5ae
+2018-11-20 00:46:28.132 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @6040b18fa4ce603f250ffc4b7f5848e58db017487c967a5bde6363816329c48c
+2018-11-20 00:46:28.132 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @075c701a677174777c99b8fb34a6be32
+2018-11-20 00:46:28.132 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 01:03:30.923 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-20 01:03:30.947 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: SendMsgResponse ret = 1101
+	at com.hammer.lei.utils.WechatUtils.checkBaseResponse(WechatUtils.java:12)
+	at com.hammer.lei.service.WechatHttpService.sendText(WechatHttpService.java:62)
+	at com.hammer.lei.MessageHandlerImpl.replyChatRoomMessage(MessageHandlerImpl.java:156)
+	at com.hammer.lei.MessageHandlerImpl.onReceivingChatRoomTextMessage(MessageHandlerImpl.java:37)
+	at com.hammer.lei.service.SyncServie.onNewMessage(SyncServie.java:132)
+	at com.hammer.lei.service.SyncServie.listen(SyncServie.java:61)
+	at com.hammer.lei.service.LoginService.login(LoginService.java:167)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+2018-11-20 01:03:30.952 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 00:39:01 CST 2018]; root of context hierarchy
+2018-11-20 01:03:30.956 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-11-20 01:03:30.957 [main] WARN  c.c.jeeves.service.CleanupService -[*] system is being destroyed
+2018-11-20 01:03:30.958 [main] WARN  c.c.jeeves.service.CleanupService -[*] logging out
+2018-11-20 01:04:41.963 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 73055 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 01:04:41.974 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 01:04:42.067 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 01:04:42 CST 2018]; root of context hierarchy
+2018-11-20 01:04:43.655 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 01:04:44.615 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 01:04:44.627 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 01:04:44.628 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 01:04:44.742 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 01:04:44.742 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2675 ms
+2018-11-20 01:04:45.004 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 01:04:45.011 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 01:04:45.012 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 01:04:45.012 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 01:04:45.013 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 01:04:46.102 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 01:04:42 CST 2018]; root of context hierarchy
+2018-11-20 01:04:46.172 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 01:04:46.176 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 01:04:46.177 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 01:04:46.215 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 01:04:46.216 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 01:04:46.262 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 01:04:46.916 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 01:04:47.305 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 01:04:47.446 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 01:04:47.461 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 01:04:47.462 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 01:04:49.109 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 01:04:49.280 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 01:04:49.780 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-20 01:04:49.787 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: com.google.zxing.NotFoundException
+	at com.hammer.lei.service.LoginService.login(LoginService.java:170)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+Caused by: com.google.zxing.NotFoundException: null
+2018-11-20 01:04:49.791 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 01:04:42 CST 2018]; root of context hierarchy
+2018-11-20 01:04:49.793 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-11-20 01:04:49.793 [main] WARN  c.c.jeeves.service.CleanupService -[*] system is being destroyed
+2018-11-20 09:43:23.961 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 73512 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 09:43:23.971 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 09:43:24.141 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 09:43:24 CST 2018]; root of context hierarchy
+2018-11-20 09:43:26.263 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 09:43:27.824 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 09:43:27.847 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 09:43:27.851 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 09:43:28.027 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 09:43:28.028 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3888 ms
+2018-11-20 09:43:28.297 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 09:43:28.306 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 09:43:28.308 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 09:43:28.309 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 09:43:28.310 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 09:43:29.921 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 09:43:24 CST 2018]; root of context hierarchy
+2018-11-20 09:43:30.077 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:43:30.087 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 09:43:30.088 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:43:30.144 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:43:30.144 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:43:30.298 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:43:31.276 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 09:43:31.615 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 09:43:31.746 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 09:43:31.754 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 09:43:31.754 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 09:43:36.377 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 09:43:37.239 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 09:43:38.306 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 09:43:38.645 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 09:43:43.968 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 09:43:43.969 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 09:43:44.022 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2018-11-20 09:44:03.627 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 09:44:05.361 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 09:44:05.802 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 09:44:06.021 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 09:44:06.598 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 09:44:06.792 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 09:44:09.752 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 09:44:09.753 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 09:44:09.804 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 09:44:10.493 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 4
+2018-11-20 09:44:10.497 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 09:44:10.497 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 09:44:10.497 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 09:44:11.326 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:44:16.908 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:44:17.151 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:44:17.151 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@71a22b73c55c85e25a144a9c1449859121ccb3b69d777ab451eef1da23012a90
+2018-11-20 09:44:17.154 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @1f12454da697dd56cfd00b595c2e1bd98943aec8314cec0c8277722cfc2b7b6c
+2018-11-20 09:44:17.155 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f2a1a03091e1252749130a81530f8295
+2018-11-20 09:44:17.156 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+z
+2018-11-20 09:44:31.849 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:44:36.900 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:45:02.296 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:45:27.484 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:45:52.676 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:46:16.378 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:46:25.034 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:46:50.536 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:46:57.816 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:46:58.114 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:46:58.115 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@71a22b73c55c85e25a144a9c1449859121ccb3b69d777ab451eef1da23012a90
+2018-11-20 09:46:58.116 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @1f12454da697dd56cfd00b595c2e1bd98943aec8314cec0c8277722cfc2b7b6c
+2018-11-20 09:46:58.117 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f2a1a03091e1252749130a81530f8295
+2018-11-20 09:46:58.117 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+·
+2018-11-20 09:47:46.795 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:48:12.352 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:48:37.539 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:49:02.686 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:49:27.920 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:49:53.111 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:50:18.302 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:50:43.491 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:51:08.681 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:51:25.096 [Thread-23] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172b013: startup date [Tue Nov 20 09:43:24 CST 2018]; root of context hierarchy
+2018-11-20 09:51:44.241 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 73607 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 09:51:44.284 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 09:51:44.404 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30c93896: startup date [Tue Nov 20 09:51:44 CST 2018]; root of context hierarchy
+2018-11-20 09:51:45.586 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 09:51:46.553 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 09:51:46.563 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 09:51:46.565 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 09:51:46.660 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 09:51:46.661 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2257 ms
+2018-11-20 09:51:46.826 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 09:51:46.832 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 09:51:46.834 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 09:51:46.836 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 09:51:46.837 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 09:51:47.729 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30c93896: startup date [Tue Nov 20 09:51:44 CST 2018]; root of context hierarchy
+2018-11-20 09:51:47.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:51:47.814 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 09:51:47.815 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:51:47.886 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:51:47.886 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:51:47.948 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:51:48.646 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 09:51:48.986 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 09:51:49.076 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 09:51:49.081 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 09:51:49.081 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 09:51:51.412 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 09:51:52.199 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 09:51:52.800 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-11-20 09:51:52.811 [main] ERROR o.s.boot.SpringApplication -Application startup failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:760)
+	at org.springframework.boot.SpringApplication.afterRefresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at com.hammer.lei.JeevesApplication.main(JeevesApplication.java:18)
+Caused by: com.hammer.lei.exception.WechatException: com.google.zxing.NotFoundException
+	at com.hammer.lei.service.LoginService.login(LoginService.java:170)
+	at com.hammer.lei.Jeeves.start(Jeeves.java:25)
+	at com.hammer.lei.JeevesApplication.lambda$run$1(JeevesApplication.java:27)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:776)
+	... 6 common frames omitted
+Caused by: com.google.zxing.NotFoundException: null
+2018-11-20 09:51:52.815 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@30c93896: startup date [Tue Nov 20 09:51:44 CST 2018]; root of context hierarchy
+2018-11-20 09:51:52.818 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Unregistering JMX-exposed beans on shutdown
+2018-11-20 09:51:52.818 [main] WARN  c.c.jeeves.service.CleanupService -[*] system is being destroyed
+2018-11-20 09:52:28.613 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 73617 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 09:52:28.620 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 09:52:28.725 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ae8bcbc: startup date [Tue Nov 20 09:52:28 CST 2018]; root of context hierarchy
+2018-11-20 09:52:29.943 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 09:52:31.107 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 09:52:31.119 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 09:52:31.121 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 09:52:31.219 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 09:52:31.220 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2495 ms
+2018-11-20 09:52:31.477 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 09:52:31.486 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 09:52:31.487 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 09:52:31.488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 09:52:31.488 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 09:52:32.550 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ae8bcbc: startup date [Tue Nov 20 09:52:28 CST 2018]; root of context hierarchy
+2018-11-20 09:52:32.630 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:52:32.638 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 09:52:32.639 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 09:52:32.688 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:52:32.688 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:52:32.757 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 09:52:33.531 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 09:52:33.918 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 09:52:34.011 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 09:52:34.017 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 09:52:34.017 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 09:52:35.288 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 09:52:36.087 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 09:52:36.690 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 09:52:36.913 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 09:52:42.102 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 09:52:42.103 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 09:52:42.134 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-11-20 09:52:48.447 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 09:52:49.994 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 09:52:50.398 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 09:52:50.677 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 09:52:51.296 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 09:52:51.500 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 09:52:54.463 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 09:52:54.464 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 09:52:54.479 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 09:52:55.089 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 4
+2018-11-20 09:52:55.090 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 09:52:55.090 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 09:52:55.090 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 09:52:56.843 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:00.831 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:01.058 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:53:01.058 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 09:53:01.061 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:53:01.061 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:53:01.062 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[咒骂]
+2018-11-20 09:53:05.546 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:10.354 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:12.200 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:23.154 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:53:48.552 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:53:53.672 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:19.075 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:54:24.498 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:24.738 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-20 09:54:24.739 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:54:24.740 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @@c39e516ab5527950e1bc056aba9f6e96be46e9221ded87bc4cf5b13bc3e9fc34
+2018-11-20 09:54:24.740 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:Www
+2018-11-20 09:54:25.364 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:34.220 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:41.490 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:41.717 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:54:41.717 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 09:54:41.718 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:54:41.718 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:54:41.718 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 09:54:42.294 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:54:55.314 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:11.699 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:14.258 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:19.685 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:21.221 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:32.690 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:55:32.833 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:33.616 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:55:33.821 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:55:38.117 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:38.541 [main] INFO  com.hammer.lei.MessageHandlerImpl -onChatRoomMembersChanged
+2018-11-20 09:55:38.542 [main] INFO  com.hammer.lei.MessageHandlerImpl -chatRoom:@@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 09:55:38.542 [main] INFO  com.hammer.lei.MessageHandlerImpl -membersJoined:Vigi
+2018-11-20 09:55:38.543 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:55:38.543 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 09:55:38.543 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:55:38.543 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:55:38.543 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+00
+2018-11-20 09:55:39.097 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:55:54.124 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:19.536 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:56:34.874 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:41.226 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:41.437 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-20 09:56:41.437 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:56:41.438 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:56:41.438 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:[发呆]
+2018-11-20 09:56:42.055 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:44.404 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:55.812 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:56:56.038 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:56:56.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:56:56.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:56:56.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:56:56.040 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[抠鼻]
+2018-11-20 09:56:56.933 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:02.113 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:04.777 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:05.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:05.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:05.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:57:05.039 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:05.040 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[发呆]
+2018-11-20 09:57:06.020 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:07.133 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:08.768 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:08.968 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:08.968 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:08.969 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:57:08.969 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:08.969 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[睡]
+2018-11-20 09:57:09.558 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:14.161 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:14.359 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:14.359 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:14.360 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:57:14.361 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:14.361 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[愉快]
+2018-11-20 09:57:14.940 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:16.462 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:22.923 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:23.144 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:23.144 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:23.145 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:57:23.146 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:23.147 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+...
+2018-11-20 09:57:24.373 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:50.553 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:57:53.211 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:53.767 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:53.768 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:53.768 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:57:53.769 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:53.769 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+正在开发一个群聊机器人，自动回复
+2018-11-20 09:57:54.509 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:58.369 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:57:58.769 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:57:58.769 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:57:58.770 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 09:57:58.770 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:57:58.771 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+[坏笑]
+2018-11-20 09:57:59.485 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:08.126 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:08.356 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:58:08.357 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:58:08.357 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:58:08.357 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:58:08.357 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+可以guansiaom
+2018-11-20 09:58:09.214 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:21.196 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:21.402 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:58:21.403 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@28d3d5ecfe688c492da9f629e6627aa1da92910b8ceda60c3e84d6fe65798261
+2018-11-20 09:58:21.403 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @740c384feb48716e71ec1df20190d2cf
+2018-11-20 09:58:21.403 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:58:21.404 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+关掉
+2018-11-20 09:58:22.073 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:25.364 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:28.438 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:41.632 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:42.009 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:59.284 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:58:59.489 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:58:59.489 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 09:58:59.490 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @6992f70f005fe9640004b1498cd9d6dd990486e5bf4c5baecf2f03a94f8df6dd
+2018-11-20 09:58:59.490 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:58:59.490 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+好
+2018-11-20 09:59:00.092 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:12.469 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:17.387 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:20.155 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:26.086 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:26.305 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 09:59:26.306 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@c39e516ab5527950e1bc056aba9f6e96be46e9221ded87bc4cf5b13bc3e9fc34
+2018-11-20 09:59:26.307 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @6992f70f005fe9640004b1498cd9d6dd990486e5bf4c5baecf2f03a94f8df6dd
+2018-11-20 09:59:26.307 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 09:59:26.308 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+自动回复
+2018-11-20 09:59:26.887 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 09:59:52.301 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 09:59:59.330 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 10:00:10.425 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 10:00:10.966 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 10:00:10.966 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@62d03b29d139cfaf304b9d4a3d3d7b392034ee47a02a7894aefceeb0abe54b0b
+2018-11-20 10:00:10.967 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @d59daee29657dd2852e207fbadb23380bb69378eea8fc0e3ebf11ff6021c4f5d
+2018-11-20 10:00:10.967 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @688f245a18a859a79fad1e60456526bb
+2018-11-20 10:00:10.967 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 10:00:27.541 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 10:00:52.875 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 10:00:53.021 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 10:01:06.962 [Thread-17] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1ae8bcbc: startup date [Tue Nov 20 09:52:28 CST 2018]; root of context hierarchy
+2018-11-20 15:41:01.566 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 77145 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 15:41:01.580 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 15:41:01.769 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 15:41:01 CST 2018]; root of context hierarchy
+2018-11-20 15:41:03.577 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 15:41:05.036 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 15:41:05.051 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 15:41:05.052 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 15:41:05.171 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 15:41:05.171 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3402 ms
+2018-11-20 15:41:05.496 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 15:41:05.513 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 15:41:05.516 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 15:41:05.516 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 15:41:05.517 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 15:41:06.503 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 15:41:01 CST 2018]; root of context hierarchy
+2018-11-20 15:41:06.582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 15:41:06.589 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 15:41:06.589 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 15:41:06.640 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 15:41:06.641 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 15:41:06.725 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 15:41:07.589 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 15:41:07.930 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 15:41:08.025 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 15:41:08.030 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 15:41:08.031 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 15:41:10.773 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 15:41:13.037 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 15:41:13.588 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 15:41:13.703 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 15:41:25.563 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 15:41:25.565 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 15:41:25.593 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-11-20 15:41:33.710 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 15:41:36.202 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 15:41:36.482 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 15:41:36.561 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 15:41:37.057 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 15:41:37.138 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 15:41:39.896 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 15:41:39.897 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 15:41:39.914 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 15:41:40.616 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 1
+2018-11-20 15:41:40.616 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 15:41:40.616 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 15:41:40.617 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 15:41:42.895 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:41:44.876 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:41:45.735 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:41:48.799 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:41:54.939 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:41:55.030 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-20 15:41:55.031 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:41:55.031 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 15:41:55.032 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:111
+2018-11-20 15:41:55.311 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:42:02.927 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:42:12.245 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:42:12.336 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:42:12.337 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 15:42:12.339 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @dd7eb00d6053f1600d91920887d0099300f8d069c490b815e35ef0f3872c97d0
+2018-11-20 15:42:12.340 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:42:12.340 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+111
+2018-11-20 15:42:50.864 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:42:52.607 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:43:03.508 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:43:28.635 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:43:43.908 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:43:50.138 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:43:54.028 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:43:54.210 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-20 15:43:54.211 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:43:54.211 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @@80a4d652003b719a6d5a3de4f4455a2604a0a26382154fbdbe6e1a0d9c908dfa
+2018-11-20 15:43:54.212 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:1
+2018-11-20 15:43:54.456 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:44:02.430 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:44:24.446 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:44:24.530 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:44:24.530 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@80a4d652003b719a6d5a3de4f4455a2604a0a26382154fbdbe6e1a0d9c908dfa
+2018-11-20 15:44:24.531 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @e9ded6f364af0371d738e39dcc79036d
+2018-11-20 15:44:24.531 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:44:24.531 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+2
+2018-11-20 15:45:19.706 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:45:19.958 [main] INFO  com.hammer.lei.MessageHandlerImpl -onNewChatRoomsFound
+2018-11-20 15:45:19.962 [main] INFO  com.hammer.lei.MessageHandlerImpl -@@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 15:45:19.963 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:45:19.964 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@80a4d652003b719a6d5a3de4f4455a2604a0a26382154fbdbe6e1a0d9c908dfa
+2018-11-20 15:45:19.965 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @ccf9fb425e41d5a24fb9d04aa9d2a6c3bea91a808aabda4ee1c4daaecd403891
+2018-11-20 15:45:19.968 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:45:19.969 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+宝宝
+2018-11-20 15:45:21.117 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:45:21.118 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 15:45:21.118 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @ccf9fb425e41d5a24fb9d04aa9d2a6c3bea91a808aabda4ee1c4daaecd403891
+2018-11-20 15:45:21.118 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:45:21.119 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+11
+2018-11-20 15:45:21.958 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:45:21.958 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@80a4d652003b719a6d5a3de4f4455a2604a0a26382154fbdbe6e1a0d9c908dfa
+2018-11-20 15:45:21.959 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @962dfe8a4b618a88b3d7c3d4025d60894835e92aa5c7a551d6ac14154aa3bcce
+2018-11-20 15:45:21.959 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:45:21.959 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+3
+2018-11-20 15:45:27.219 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:45:27.346 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 15:45:27.347 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@80a4d652003b719a6d5a3de4f4455a2604a0a26382154fbdbe6e1a0d9c908dfa
+2018-11-20 15:45:27.347 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @ccf9fb425e41d5a24fb9d04aa9d2a6c3bea91a808aabda4ee1c4daaecd403891
+2018-11-20 15:45:27.347 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 15:45:27.348 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+4
+2018-11-20 15:45:30.639 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 15:45:56.090 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:46:21.132 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:46:46.268 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:47:11.312 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:47:36.440 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:48:01.483 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:48:26.618 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:48:51.918 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:49:17.002 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:49:42.086 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:50:07.127 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:50:32.261 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:50:57.309 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:51:22.438 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:51:47.528 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:52:12.618 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:52:37.682 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:53:02.793 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:53:27.880 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:53:52.920 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:54:18.024 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:54:43.074 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:55:08.132 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:55:33.214 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:55:58.303 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:56:23.396 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:56:48.498 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:57:13.586 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:57:38.677 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:58:03.735 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:58:28.782 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:58:53.844 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:59:18.882 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 15:59:44.013 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:00:09.104 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:00:34.189 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:00:57.724 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:01:00.051 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 16:01:00.052 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 16:01:00.056 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @dd7eb00d6053f1600d91920887d0099300f8d069c490b815e35ef0f3872c97d0
+2018-11-20 16:01:00.056 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 16:01:00.057 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 16:02:29.603 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:02:54.640 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:02:58.027 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:30:46.557 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 16:30:46.567 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@bb13f58b27190a9da08cc573564ab8bd203dbb201d270e27e84c3291f4f87439
+2018-11-20 16:30:46.570 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @dd7eb00d6053f1600d91920887d0099300f8d069c490b815e35ef0f3872c97d0
+2018-11-20 16:30:46.570 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @59656045e17cbbd3ee59cebe4d00425c
+2018-11-20 16:30:46.571 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 16:30:46.680 [Thread-20] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 15:41:01 CST 2018]; root of context hierarchy
+2018-11-20 16:31:28.717 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 77521 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-20 16:31:28.727 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-20 16:31:28.973 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 16:31:28 CST 2018]; root of context hierarchy
+2018-11-20 16:31:30.720 [main] WARN  o.m.s.mapper.ClassPathMapperScanner -No MyBatis mapper was found in '[com.hammer.lei]' package. Please check your configuration.
+2018-11-20 16:31:32.092 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-20 16:31:32.106 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-20 16:31:32.107 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-20 16:31:32.237 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-20 16:31:32.238 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3265 ms
+2018-11-20 16:31:32.507 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-20 16:31:32.516 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-20 16:31:32.517 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-20 16:31:32.518 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-20 16:31:32.518 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-20 16:31:33.905 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 16:31:28 CST 2018]; root of context hierarchy
+2018-11-20 16:31:33.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 16:31:33.995 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-20 16:31:33.996 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-20 16:31:34.088 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 16:31:34.089 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 16:31:34.202 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-20 16:31:35.384 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-20 16:31:35.750 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-20 16:31:35.841 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-20 16:31:35.845 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-20 16:31:35.845 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-20 16:31:41.428 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 16:31:46.643 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 16:31:47.335 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 16:31:47.448 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 16:32:12.532 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:32:37.602 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:33:02.670 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:33:27.743 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:33:52.822 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:34:17.908 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:34:43.045 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:35:08.132 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:35:33.180 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:35:58.309 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:36:23.399 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:36:48.492 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:36:48.527 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = EXPIRED
+2018-11-20 16:36:53.807 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-20 16:36:53.863 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-20 16:36:54.078 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-20 16:36:54.146 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-20 16:37:19.206 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:37:44.293 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:38:09.380 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_SCANNING
+2018-11-20 16:38:15.564 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-20 16:38:15.565 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-20 16:38:15.598 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-11-20 16:38:17.232 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-20 16:38:18.597 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-20 16:38:23.995 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-20 16:38:24.071 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-20 16:38:24.491 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-20 16:38:24.563 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-20 16:38:27.591 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-20 16:38:27.592 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-20 16:38:27.610 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-20 16:38:28.475 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 4
+2018-11-20 16:38:28.476 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-20 16:38:28.476 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-20 16:38:28.476 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-20 16:38:33.647 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:38:43.599 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:38:44.205 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:38:58.008 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:38:58.091 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 16:38:58.092 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@35269c68bf0c86b78b96a5bfbf9bfb25cedddbfe55f762f6a80b343b6d50a43f
+2018-11-20 16:38:58.095 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @a522a0f7db7d8397fc585738eaa9ff60941a04a815c3a5f58b342f08d55f490f
+2018-11-20 16:38:58.095 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @fb0f7f834b0bad910286be32c3fb911f
+2018-11-20 16:38:58.096 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+2
+2018-11-20 16:40:17.522 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:40:22.972 [Thread-593] ERROR com.hammer.lei.MessageHandlerImpl -ChatRoom replyMessage error!
+com.twilio.exception.ApiException: Account not authorized to call +8613627268272. Perhaps you need to enable some international permissions: https://www.twilio.com/console/voice/calls/geo-permissions/low-risk
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:538)
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:25)
+	at com.twilio.base.Creator.create(Creator.java:45)
+	at com.hammer.lei.service.TwilioService.callSomebody(TwilioService.java:28)
+	at com.hammer.lei.MessageHandlerImpl$1.run(MessageHandlerImpl.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-20 16:40:42.881 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:41:07.965 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:41:33.056 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:41:58.155 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:42:23.198 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:42:48.325 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:43:13.376 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:43:38.511 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:44:03.603 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:44:28.655 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:44:30.105 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:44:33.868 [main] INFO  com.hammer.lei.MessageHandlerImpl -onChatRoomMembersChanged
+2018-11-20 16:44:33.868 [main] INFO  com.hammer.lei.MessageHandlerImpl -chatRoom:@@81ad3a6baea5293cbfbf59dbaec2f873195a94914ec1b8338e6381852f498355
+2018-11-20 16:44:33.873 [main] INFO  com.hammer.lei.MessageHandlerImpl -membersJoined:邬同舟
+2018-11-20 16:44:58.918 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:45:23.960 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:45:49.055 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:45:57.455 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:46:22.490 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:46:47.526 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:47:12.591 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:47:37.723 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:48:02.808 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:48:27.851 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:48:49.708 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:48:51.503 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 16:48:51.503 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@35269c68bf0c86b78b96a5bfbf9bfb25cedddbfe55f762f6a80b343b6d50a43f
+2018-11-20 16:48:51.504 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @a522a0f7db7d8397fc585738eaa9ff60941a04a815c3a5f58b342f08d55f490f
+2018-11-20 16:48:51.504 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @fb0f7f834b0bad910286be32c3fb911f
+2018-11-20 16:48:51.505 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+1
+2018-11-20 16:48:54.650 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:48:57.186 [Thread-594] ERROR com.hammer.lei.MessageHandlerImpl -ChatRoom replyMessage error!
+com.twilio.exception.ApiException: Account not authorized to call +8613627268272. Perhaps you need to enable some international permissions: https://www.twilio.com/console/voice/calls/geo-permissions/low-risk
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:538)
+	at com.twilio.rest.api.v2010.account.CallCreator.create(CallCreator.java:25)
+	at com.twilio.base.Creator.create(Creator.java:45)
+	at com.hammer.lei.service.TwilioService.callSomebody(TwilioService.java:28)
+	at com.hammer.lei.MessageHandlerImpl$1.run(MessageHandlerImpl.java:62)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-20 16:49:19.917 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:49:44.952 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:50:10.015 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:50:31.830 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:50:33.206 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 16:50:33.206 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@35269c68bf0c86b78b96a5bfbf9bfb25cedddbfe55f762f6a80b343b6d50a43f
+2018-11-20 16:50:33.206 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @a522a0f7db7d8397fc585738eaa9ff60941a04a815c3a5f58b342f08d55f490f
+2018-11-20 16:50:33.207 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @fb0f7f834b0bad910286be32c3fb911f
+2018-11-20 16:50:33.207 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+12
+2018-11-20 16:50:33.297 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:50:58.862 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:51:23.927 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:51:48.978 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:52:14.100 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:52:14.161 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:52:40.411 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:53:05.503 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:53:30.544 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:53:55.607 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:54:20.766 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:54:45.857 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:55:10.913 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:55:36.046 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:56:01.096 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:56:02.347 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:56:28.597 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:56:53.752 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:57:18.787 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:57:43.929 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:58:08.967 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:58:34.104 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:58:59.147 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:59:24.208 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 16:59:40.257 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:59:43.454 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomImageMessage
+2018-11-20 16:59:43.454 [main] INFO  com.hammer.lei.MessageHandlerImpl -thumbImageUrl:https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID=6341649802124376936&skey=@crypt_1354165e_69627bab8db95a72634e53177125afe9&type=slave
+2018-11-20 16:59:43.454 [main] INFO  com.hammer.lei.MessageHandlerImpl -fullImageUrl:https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID=6341649802124376936&skey=@crypt_1354165e_69627bab8db95a72634e53177125afe9
+2018-11-20 16:59:47.936 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 16:59:48.020 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomImageMessage
+2018-11-20 16:59:48.020 [main] INFO  com.hammer.lei.MessageHandlerImpl -thumbImageUrl:https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID=8042027691171477155&skey=@crypt_1354165e_69627bab8db95a72634e53177125afe9&type=slave
+2018-11-20 16:59:48.020 [main] INFO  com.hammer.lei.MessageHandlerImpl -fullImageUrl:https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxgetmsgimg?&MsgID=8042027691171477155&skey=@crypt_1354165e_69627bab8db95a72634e53177125afe9
+2018-11-20 17:00:05.553 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 17:00:05.635 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-20 17:00:05.635 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@9f51b84e7f3fcf44855a3a1c43c3a6c5a002724f4938acecff219bde71a8dd4f
+2018-11-20 17:00:05.636 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @a522a0f7db7d8397fc585738eaa9ff60941a04a815c3a5f58b342f08d55f490f
+2018-11-20 17:00:05.636 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @fb0f7f834b0bad910286be32c3fb911f
+2018-11-20 17:00:05.637 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+监控微信群消息，然后自动拨打电话[坏笑]
+2018-11-20 17:00:05.797 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-20 17:00:31.044 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-20 17:00:45.394 [Thread-21] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@132e0cc: startup date [Tue Nov 20 16:31:28 CST 2018]; root of context hierarchy

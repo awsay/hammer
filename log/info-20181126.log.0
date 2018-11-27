@@ -1,0 +1,851 @@
+2018-11-26 15:51:31.611 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 9924 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-26 15:51:31.621 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-26 15:51:31.756 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@416c58f5: startup date [Mon Nov 26 15:51:31 CST 2018]; root of context hierarchy
+2018-11-26 15:51:34.880 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-26 15:51:34.918 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-26 15:51:34.923 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-26 15:51:35.148 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-26 15:51:35.148 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3392 ms
+2018-11-26 15:51:35.432 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-26 15:51:35.442 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-26 15:51:35.443 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-26 15:51:35.444 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-26 15:51:35.444 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-26 15:51:37.324 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@416c58f5: startup date [Mon Nov 26 15:51:31 CST 2018]; root of context hierarchy
+2018-11-26 15:51:37.471 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/toConfigPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.ConfigController.toConfigPage()
+2018-11-26 15:51:37.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/editConfig],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.ConfigController.editConfig(long)
+2018-11-26 15:51:37.474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/saveConfig],methods=[POST]}" onto public java.lang.String com.hammer.lei.controller.ConfigController.saveConfig(com.hammer.lei.domain.config.WechatConfig)
+2018-11-26 15:51:37.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/delConfig],methods=[GET]}" onto public java.lang.String com.hammer.lei.controller.ConfigController.delConfig(long)
+2018-11-26 15:51:37.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-26 15:51:37.476 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/loginStatus],methods=[POST]}" onto public java.lang.String com.hammer.lei.controller.LoginController.loginStatus(int)
+2018-11-26 15:51:37.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-26 15:51:37.482 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-26 15:51:37.534 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 15:51:37.537 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 15:51:37.648 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 15:51:38.045 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-26 15:51:38.486 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-26 15:51:38.622 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-26 15:51:38.630 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-26 15:51:38.630 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-26 15:51:41.578 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-26 15:51:43.905 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-26 15:51:44.554 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-26 15:51:44.555 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-26 15:51:44.588 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2018-11-26 15:51:44.713 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-26 15:51:44.922 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-26 15:52:03.603 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-26 15:52:06.043 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-26 15:52:06.328 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-26 15:52:06.395 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-26 15:52:06.865 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-26 15:52:06.956 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-26 15:52:09.806 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-26 15:52:09.806 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-26 15:52:09.829 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-26 15:52:10.568 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 3
+2018-11-26 15:52:10.569 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-26 15:52:10.569 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-26 15:52:10.569 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-26 15:52:22.579 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:53:04.524 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:53:29.601 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:53:32.071 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:53:37.261 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 15:53:37.263 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 15:53:37.263 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 15:53:37.263 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:傻逼娃今天睡四个小时了下午
+2018-11-26 15:53:37.516 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 15:53:37.517 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 15:53:37.517 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 15:53:37.517 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:还在睡
+2018-11-26 15:53:37.777 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:53:45.198 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:53:45.274 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 15:53:45.274 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 15:53:45.274 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 15:53:45.274 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:我日，
+2018-11-26 15:53:45.570 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:53:53.972 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:54:16.293 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 15:54:41.486 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:55:06.524 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:55:26.279 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> config  [in template "edit_config.ftl" at line 9, column 49]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${config.id!"0"}  [in template "edit_config.ftl" at line 9, column 47]
+----] with root cause
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> config  [in template "edit_config.ftl" at line 9, column 49]
+
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${config.id!"0"}  [in template "edit_config.ftl" at line 9, column 47]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DefaultToExpression._eval(DefaultToExpression.java:84)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1282)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:980)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-26 15:55:26.312 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet dispatcherServlet threw exception
+java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:585)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:194)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:100)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:89)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:244)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:231)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:203)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:113)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-26 15:55:26.315 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[Tomcat].[localhost] -Exception Processing ErrorPage[errorCode=0, location=/error]
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:590)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:524)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:389)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:349)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:175)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:861)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: getWriter() has already been called for this response
+	at org.apache.catalina.connector.Response.getOutputStream(Response.java:585)
+	at org.apache.catalina.connector.ResponseFacade.getOutputStream(ResponseFacade.java:194)
+	at javax.servlet.ServletResponseWrapper.getOutputStream(ServletResponseWrapper.java:100)
+	at org.springframework.http.server.ServletServerHttpResponse.getBody(ServletServerHttpResponse.java:89)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:244)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:231)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:203)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:113)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	... 38 common frames omitted
+2018-11-26 15:55:31.699 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:55:56.856 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:56:21.956 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:56:47.015 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:57:12.202 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:57:37.320 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:58:02.402 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:58:27.486 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:58:52.579 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:59:17.620 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 15:59:42.746 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:00:07.840 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:00:32.905 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:00:57.951 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:01:23.005 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:01:48.087 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:02:13.182 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:02:38.274 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:03:03.346 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:03:28.447 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:03:53.483 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:04:18.527 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:04:43.580 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:05:08.684 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:05:33.765 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:05:58.860 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:06:23.968 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:06:49.001 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:07:14.089 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:07:14.125 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 4
+2018-11-26 16:07:41.976 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:08:07.076 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:08:07.105 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 4
+2018-11-26 16:08:32.365 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:08:57.459 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:08:57.492 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 16:09:22.641 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:09:47.724 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:10:12.811 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:10:37.903 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:11:03.088 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:11:28.128 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:11:53.161 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:12:18.250 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:12:43.398 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:13:08.539 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:13:33.629 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:13:58.680 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:14:23.793 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:14:48.889 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:15:13.935 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:15:38.998 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:16:04.064 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:16:29.108 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:16:54.225 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:17:19.267 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:17:44.407 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:18:09.482 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:18:34.590 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:18:59.658 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:19:24.691 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:19:49.736 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:20:14.820 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:20:39.872 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:21:05.020 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:21:30.085 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:21:55.122 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:22:20.264 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:22:45.350 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:23:10.451 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:23:35.534 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:24:00.617 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:24:25.722 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:24:50.780 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:25:15.876 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:25:40.999 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:26:06.035 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:26:31.140 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:26:56.233 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:27:21.279 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:27:46.407 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:27:46.461 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 16:28:13.816 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:28:38.867 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:29:03.920 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:29:28.952 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:29:54.006 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:30:19.048 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:30:44.089 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:31:09.220 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:31:34.361 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:31:59.439 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:32:24.522 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:32:49.644 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:33:14.798 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:33:14.829 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 4
+2018-11-26 16:33:42.352 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:34:07.750 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:34:32.931 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:34:58.208 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:35:23.313 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:35:48.394 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:36:13.491 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:36:38.531 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:37:03.593 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:37:28.839 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:37:53.870 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:38:18.921 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:38:44.027 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:39:09.102 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:39:34.142 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:39:59.281 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:40:24.356 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:40:49.459 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:41:14.493 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:41:39.626 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:42:04.667 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:42:29.714 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:42:54.798 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:43:19.841 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:43:44.967 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:44:10.061 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:44:35.142 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:45:00.223 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:45:25.259 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:45:50.415 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:46:15.448 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:46:40.588 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:47:05.637 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:47:30.706 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:47:55.756 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:48:20.829 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:48:45.861 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:49:11.007 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:49:36.088 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:50:01.133 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:50:26.264 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:50:51.353 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:51:16.394 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:51:41.533 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:52:06.606 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:52:31.645 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:52:56.703 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:53:21.796 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:53:46.872 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:54:11.968 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:54:37.040 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:55:02.099 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:55:27.226 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:55:52.262 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:56:17.343 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:56:42.489 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:57:07.528 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:57:32.663 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:57:57.748 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:58:22.835 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:58:47.920 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:59:13.008 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 16:59:38.096 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:00:03.194 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:00:28.275 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:00:53.478 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:00:53.513 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 17:01:21.316 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:01:46.349 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:02:11.389 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:02:36.479 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:03:01.631 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:03:26.789 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:03:51.948 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:04:16.983 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:04:42.032 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:05:07.092 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:05:32.197 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:05:57.283 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:06:22.339 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:06:47.390 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:07:12.441 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:07:37.538 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:08:02.622 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:08:27.716 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:08:52.778 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:09:17.889 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:09:42.976 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:10:08.063 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:10:33.090 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:10:58.134 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:11:23.206 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:11:48.338 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:12:13.398 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:12:38.471 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:13:03.527 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:13:28.669 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:13:53.707 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:14:18.856 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:14:43.932 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:15:08.968 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:15:34.013 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:15:59.105 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:16:24.145 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:16:49.182 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:17:14.251 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:17:39.324 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:18:04.438 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:18:29.519 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:18:54.556 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:19:19.736 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:19:44.799 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:20:09.868 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:20:34.953 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:20:59.995 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:21:25.034 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:21:50.116 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:22:15.201 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:22:40.290 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:23:05.380 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:23:30.420 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:23:55.488 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:24:20.551 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:24:45.591 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:25:10.627 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:25:35.712 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:26:00.765 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:26:25.805 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:26:50.839 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:27:15.951 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:27:41.041 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:28:06.099 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:28:31.334 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:28:56.410 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:29:21.492 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:29:46.585 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:30:11.679 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:30:36.760 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:31:01.845 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:31:26.970 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:31:52.027 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:32:17.119 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:32:42.181 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:33:07.290 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:33:32.378 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:33:57.464 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:34:22.519 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:34:47.556 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:35:12.644 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:35:37.722 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:36:02.767 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:36:27.805 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:36:52.887 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:37:17.963 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:37:43.048 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:38:08.145 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:38:33.218 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:38:58.305 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:39:23.404 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:39:48.642 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:40:13.984 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:40:39.177 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:41:04.263 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:41:29.326 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:41:54.766 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:42:19.940 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:42:45.396 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:43:10.485 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:43:35.551 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:44:00.663 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:44:25.921 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:44:50.958 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:45:16.025 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:45:41.116 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:46:06.148 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:46:31.299 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:46:56.377 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:47:21.489 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:47:47.068 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:48:12.156 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:48:37.288 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:48:52.097 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 17:48:54.565 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 17:48:54.565 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 17:48:54.566 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 17:48:54.566 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:你的娃今天睡到五点
+2018-11-26 17:48:55.081 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 17:48:57.605 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 17:48:57.694 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 17:48:57.695 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 17:48:57.697 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 17:48:57.697 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:睡了五个小时
+2018-11-26 17:48:58.239 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 17:49:23.737 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:49:48.855 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:50:13.949 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:50:40.540 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:51:05.760 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:51:30.918 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:52:00.329 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:52:25.474 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:52:50.707 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:53:16.197 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:53:41.254 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:54:06.336 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:54:31.410 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:54:56.530 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:55:21.577 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:55:46.714 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:56:11.796 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:56:36.834 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:57:01.868 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:57:26.915 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:57:51.958 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:58:17.030 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:58:42.067 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:59:07.110 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:59:32.328 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 17:59:57.484 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:00:22.524 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:00:47.662 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:01:12.713 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:01:37.837 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:02:03.042 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:02:28.421 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:02:53.513 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:03:18.598 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:03:43.643 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:04:08.682 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:04:33.731 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:04:58.836 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:05:23.937 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:05:49.022 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:06:14.114 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:06:39.156 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:06:55.685 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:07:23.127 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:07:27.816 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:07:27.903 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 18:07:27.904 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 18:07:27.904 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 18:07:27.904 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:今天要晚一点回
+2018-11-26 18:07:28.118 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:07:50.367 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:08:03.779 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:08:28.977 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:08:29.018 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:08:41.262 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:08:41.332 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 18:08:41.332 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 18:08:41.332 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 18:08:41.332 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:几点啊
+2018-11-26 18:08:41.769 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:09:06.922 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:09:32.052 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:09:57.150 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:10:22.210 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:10:24.174 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:10:51.618 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:10:52.955 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:10:53.043 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 18:10:53.045 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @24d2363c1ea9cea4d349341e6767e5f242994c7726dfacceae40ddd9c0e5d67f
+2018-11-26 18:10:53.045 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @f70bdded40f32d1dd000f7902b0b9fc9
+2018-11-26 18:10:53.047 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:傻逼
+2018-11-26 18:10:53.324 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:11:18.444 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:11:43.501 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:12:08.675 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:12:33.721 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:12:58.778 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:13:23.837 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:13:48.875 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:14:13.922 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:14:39.000 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:15:04.047 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:15:29.093 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:15:54.136 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:16:19.246 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:16:44.281 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:17:09.427 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:17:34.472 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:17:59.521 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:18:24.587 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:18:49.623 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:19:14.761 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:19:39.852 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:20:04.885 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:20:30.023 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:20:40.165 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:21:05.316 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:21:30.439 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:21:30.475 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:22:00.853 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:22:25.940 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:22:51.027 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:23:16.126 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:23:41.205 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:24:06.246 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:24:31.281 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:24:56.385 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:25:21.458 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:25:46.644 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 18:26:04.769 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 18:26:20.028 [Thread-22] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@416c58f5: startup date [Mon Nov 26 15:51:31 CST 2018]; root of context hierarchy
+2018-11-26 19:48:46.245 [main] INFO  com.hammer.lei.JeevesApplication -Starting JeevesApplication on leifeifeideMacBook-Air.local with PID 11744 (started by leifeifei in /Users/leifeifei/Documents/leifeifei/git hub/jeeves)
+2018-11-26 19:48:46.267 [main] INFO  com.hammer.lei.JeevesApplication -No active profile set, falling back to default profiles: default
+2018-11-26 19:48:46.406 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Mon Nov 26 19:48:46 CST 2018]; root of context hierarchy
+2018-11-26 19:48:49.177 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat initialized with port(s): 8080 (http)
+2018-11-26 19:48:49.190 [main] INFO  o.a.catalina.core.StandardService -Starting service Tomcat
+2018-11-26 19:48:49.192 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.14
+2018-11-26 19:48:49.439 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2018-11-26 19:48:49.440 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3034 ms
+2018-11-26 19:48:49.603 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2018-11-26 19:48:49.610 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-26 19:48:49.611 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-26 19:48:49.612 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-11-26 19:48:49.612 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-26 19:48:51.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Mon Nov 26 19:48:46 CST 2018]; root of context hierarchy
+2018-11-26 19:48:51.328 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/toConfigPage],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.ConfigController.toConfigPage()
+2018-11-26 19:48:51.333 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/editConfig],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.ConfigController.editConfig(long)
+2018-11-26 19:48:51.334 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/saveConfig],methods=[POST]}" onto public java.lang.String com.hammer.lei.controller.ConfigController.saveConfig(com.hammer.lei.domain.config.WechatConfig)
+2018-11-26 19:48:51.335 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/delConfig],methods=[GET]}" onto public java.lang.String com.hammer.lei.controller.ConfigController.delConfig(long)
+2018-11-26 19:48:51.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/login],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.hammer.lei.controller.LoginController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-26 19:48:51.338 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/loginStatus],methods=[POST]}" onto public java.lang.String com.hammer.lei.controller.LoginController.loginStatus(int)
+2018-11-26 19:48:51.342 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-11-26 19:48:51.343 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-11-26 19:48:51.385 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 19:48:51.385 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 19:48:51.445 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-11-26 19:48:51.744 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-11-26 19:48:52.101 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2018-11-26 19:48:52.309 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -Tomcat started on port(s): 8080 (http)
+2018-11-26 19:48:52.327 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves starts
+2018-11-26 19:48:52.327 [main] INFO  c.cherry.jeeves.service.LoginService -Jeeves id = jeeves
+2018-11-26 19:48:56.694 [main] INFO  c.cherry.jeeves.service.LoginService -[0] entry completed
+2018-11-26 19:49:01.529 [main] INFO  c.cherry.jeeves.service.LoginService -[1] uuid completed
+2018-11-26 19:49:02.079 [main] INFO  c.cherry.jeeves.service.LoginService -[2] qrcode completed
+2018-11-26 19:49:02.192 [main] INFO  c.cherry.jeeves.service.LoginService -[3] statReport completed
+2018-11-26 19:49:13.430 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-11-26 19:49:13.430 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2018-11-26 19:49:13.457 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-11-26 19:49:23.824 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login status = AWAIT_CONFIRMATION
+2018-11-26 19:49:26.061 [main] INFO  c.cherry.jeeves.service.LoginService -[4] login completed
+2018-11-26 19:49:26.339 [main] INFO  c.cherry.jeeves.service.LoginService -[5] redirect login completed
+2018-11-26 19:49:26.432 [main] INFO  c.cherry.jeeves.service.LoginService -[6] redirect completed
+2018-11-26 19:49:26.868 [main] INFO  c.cherry.jeeves.service.LoginService -[7] init completed
+2018-11-26 19:49:26.953 [main] INFO  c.cherry.jeeves.service.LoginService -[8] status notify completed
+2018-11-26 19:49:29.987 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse seq = 0
+2018-11-26 19:49:29.987 [main] INFO  c.cherry.jeeves.service.LoginService -[*] getContactResponse memberCount = 491
+2018-11-26 19:49:30.001 [main] INFO  c.cherry.jeeves.service.LoginService -[9] get contact completed
+2018-11-26 19:49:30.478 [main] INFO  c.cherry.jeeves.service.LoginService -[*] batchGetContactResponse count = 2
+2018-11-26 19:49:30.478 [main] INFO  c.cherry.jeeves.service.LoginService -[10] batch get contact completed
+2018-11-26 19:49:30.479 [main] INFO  c.cherry.jeeves.service.LoginService -[*] login process completed
+2018-11-26 19:49:30.480 [main] INFO  c.cherry.jeeves.service.LoginService -[*] start listening
+2018-11-26 19:49:42.781 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 19:50:08.040 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:50:33.083 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:50:58.218 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:51:23.289 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:51:48.404 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:52:13.586 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:52:38.669 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:53:03.759 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:53:28.845 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:53:53.934 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:54:19.025 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:54:44.109 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:55:09.196 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:55:34.286 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:55:59.372 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:56:24.467 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:56:49.524 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:57:14.637 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:57:39.725 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:58:04.813 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:58:29.900 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:58:54.991 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:59:20.026 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 19:59:45.062 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:00:10.150 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:00:35.239 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:01:00.326 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:01:25.416 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:01:50.604 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:02:15.693 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:02:40.776 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:03:05.868 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:03:30.959 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:03:56.045 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:04:21.084 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:04:46.239 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:05:11.364 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:05:36.452 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:06:01.490 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:06:26.528 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:06:51.562 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:07:16.701 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:07:41.800 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:08:06.839 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:08:31.967 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:08:57.052 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:09:22.140 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:09:47.243 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:10:12.277 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:10:37.310 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:11:02.397 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:11:27.480 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:11:52.566 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:12:17.654 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:12:18.753 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 20:12:21.073 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingPrivateTextMessage
+2018-11-26 20:12:21.074 [main] INFO  com.hammer.lei.MessageHandlerImpl -from: @2839a92a6071e1362092a98fb95c0d137dcca49443baf8c6fd7c28763814e0d5
+2018-11-26 20:12:21.074 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @0cfcaf0d1ae3b0c936c9f90eb2a4fe82
+2018-11-26 20:12:21.074 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:还没搞完？
+2018-11-26 20:12:21.355 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 20:12:46.462 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:13:11.517 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:13:36.604 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:14:01.693 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:14:26.780 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:14:51.873 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:15:16.905 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:15:41.946 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:16:07.030 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:16:32.120 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:16:53.417 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 20:17:23.735 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:17:48.820 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:18:13.899 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:18:38.992 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:19:04.078 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:19:29.114 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:19:54.147 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:20:19.242 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:20:44.330 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:21:09.370 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:21:34.506 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:21:59.593 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:22:24.683 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:22:49.772 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:23:14.861 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:23:39.896 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:24:04.937 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:24:30.029 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:24:55.066 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:25:20.100 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:25:45.192 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:26:10.281 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:26:10.315 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 20:26:37.724 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:27:02.759 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:27:27.902 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:27:52.995 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:28:18.034 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:28:43.164 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:29:08.226 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:29:33.343 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:29:58.427 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:30:23.516 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:30:48.554 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:31:13.594 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:31:38.683 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:32:03.764 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:32:28.802 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:32:53.909 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:33:19.028 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:33:44.111 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:34:09.191 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:34:34.266 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:34:59.490 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:35:24.676 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:35:49.758 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:36:14.849 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 0
+2018-11-26 20:36:31.612 [main] INFO  com.hammer.lei.service.SyncServie -[SYNCCHECK] retcode = 0, selector = 2
+2018-11-26 20:36:33.979 [main] INFO  com.hammer.lei.MessageHandlerImpl -onReceivingChatRoomTextMessage
+2018-11-26 20:36:33.980 [main] INFO  com.hammer.lei.MessageHandlerImpl -from chatroom: @@ac273c3597865eb6b9f225156c208e6822540f5cf94449db749e2de222231992
+2018-11-26 20:36:33.997 [main] INFO  com.hammer.lei.MessageHandlerImpl -from person: @f3ce42d9ae00980e979574631f55f4af
+2018-11-26 20:36:33.997 [main] INFO  com.hammer.lei.MessageHandlerImpl -to: @0cfcaf0d1ae3b0c936c9f90eb2a4fe82
+2018-11-26 20:36:33.998 [main] INFO  com.hammer.lei.MessageHandlerImpl -content:
+@<span class="emoji emoji1f463"></span>屌丝画จุ๊บ <span class="emoji emoji1f463"></span> 吃鸡吗
