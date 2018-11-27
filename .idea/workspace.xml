@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aef6a043-713b-45d8-b2ae-4f29de54c1ce" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hammer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hammer/lei/service/TwilioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hammer/lei/service/TwilioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/Hammer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/Hammer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/HammerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/HammerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/MessageHandlerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/MessageHandlerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/MessageHandlerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/constant/StringConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/constant/StringConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/controller/ConfigController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/controller/ConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/dao/ConfigDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/dao/ConfigDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/config/WechatConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/config/WechatConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/AddChatRoomMemberRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/AddChatRoomMemberRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/BatchGetContactRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/BatchGetContactRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/CreateChatRoomRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/CreateChatRoomRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/DeleteChatRoomMemberRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/DeleteChatRoomMemberRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/InitRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/InitRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/OpLogRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/OpLogRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/SendMsgRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/SendMsgRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/StatReportRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/StatReportRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/StatusNotifyRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/StatusNotifyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/SyncRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/SyncRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/VerifyUserRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/VerifyUserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/component/BaseRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/request/component/BaseRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/AddChatRoomMemberResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/AddChatRoomMemberResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/BatchGetContactResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/BatchGetContactResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/CreateChatRoomResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/CreateChatRoomResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/DeleteChatRoomMemberResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/DeleteChatRoomMemberResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/GetContactResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/GetContactResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/InitResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/InitResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/LoginResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/LoginResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/OpLogResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/OpLogResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SendMsgResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SendMsgResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/StatusNotifyResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/StatusNotifyResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SyncCheckResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SyncCheckResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SyncResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/SyncResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/VerifyUserResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/VerifyUserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/component/BaseResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/component/BaseResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/component/WechatHttpResponseBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/response/component/WechatHttpResponseBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/AppInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/AppInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/BaseMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/BaseMsg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/ChatRoomDescription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/ChatRoomDescription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/ChatRoomMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/ChatRoomMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Contact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Contact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/FriendInvitationContent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/FriendInvitationContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/MPArticle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/MPArticle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/MPSubscription.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/MPSubscription.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Owner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Owner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Profile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Profile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/RecommendInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/RecommendInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/StatReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/StatReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncCheckKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncCheckKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncCheckKeyPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncCheckKeyPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncKey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncKeyPair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/SyncKeyPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/VerifyUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/domain/shared/VerifyUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/AddScene.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/AddScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/AppMessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/AppMessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ChatRoomNotify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ChatRoomNotify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ContactFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ContactFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/LoginCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/LoginCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMNotify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMNotify.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMSendFileStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMSendFileStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMSound.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MMSound.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MessageSendStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MessageSendStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/OpLogCmdId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/OpLogCmdId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ProfileBitFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/ProfileBitFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/RetCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/RetCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/Selector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/Selector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/SpecialContact.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/SpecialContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/StatusNotifyCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/StatusNotifyCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/UploadMediaType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/UploadMediaType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/UserAttrVerifyFlag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/UserAttrVerifyFlag.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/VerifyUserOPCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/enums/VerifyUserOPCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/exception/WechatException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/exception/WechatException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/exception/WechatQRExpiredException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/exception/WechatQRExpiredException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/CacheService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/CacheService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/CleanupService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/CleanupService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/ConfigService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/ConfigService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/DefaultMessageHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/DefaultMessageHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/LoginService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/MessageHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/MessageHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/SyncServie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/SyncServie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/TwilioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/TwilioService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpServiceInternal$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpServiceInternal$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpServiceInternal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/service/WechatHttpServiceInternal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ApiUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ApiUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/DeviceIdGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/DeviceIdGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HeaderUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HeaderUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HomethyThreadFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HomethyThreadFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HomethyThreadPoolExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/HomethyThreadPoolExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/MessageUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/MessageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/QRCodeUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/QRCodeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/RandomUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/RandomUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExecutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExecutorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/ThreadExecutorUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/WechatUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/WechatUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/rest/HttpRestConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/rest/HttpRestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/rest/StatefullRestTemplate$StatefullHttpComponentsClientHttpRequestFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/rest/StatefullRestTemplate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hammer/lei/utils/rest/StatefullRestTemplate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/login-success.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/laydate/default/font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/all-mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/mobile/layer-mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/mobile/layim-mobile-open.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/mobile/upload-mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/mobile/zepto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/lib/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/config.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/edit_config.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/login.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/domain/response/TokenTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/domain/shared/FriendInvitationContentTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/utils/DeviceIdGeneratorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/utils/HeaderUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/utils/MessageUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/utils/QRCodeUtilsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/hammer/lei/utils/RandomUtilsTest.class" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ConfigController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hammer/lei/controller/ConfigController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TwilioService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hammer/lei/service/TwilioService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/hammer/lei/service/TwilioService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$PROJECT_DIR$/../../repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../software/apache-maven-3.1.0" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../software/apache-maven-3.1.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="803" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="lei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="lei" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hammer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hammer" type="462c0819:PsiDirectoryNode" />
+              <item name="lei" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="HammerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hammer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hammer.lei.HammerApplication" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aef6a043-713b-45d8-b2ae-4f29de54c1ce" name="Default" comment="" />
+      <created>1543306285362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543306285362</updated>
+      <workItem from="1543306289102" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="61000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="803" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info id="Web" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hammer/lei/controller/ConfigController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hammer/lei/service/TwilioService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,312 +1,317 @@
-# hammer
+# jeeves
 
 [![Build Status](https://travis-ci.org/kanjielu/jeeves.svg?branch=master)](https://travis-ci.org/kanjielu/jeeves)
 
 A smart WeChat bot.
 
-[中文文档](https://github.com/kanjielu/jeeves/blob/master/README.zh-CN.md)
+[English Docs](https://github.com/kanjielu/jeeves/blob/master/README.md)
 
 ## Getting Started
 
-### Requirements
+### 运行环境
 JDK 8
 
-### How to run
+### 如何运行
 ```
 mvn spring-boot:run
 ```
 
-You should see the following logs.
+启动后，会看到如下的日志信息：
 
 ![alt text](https://github.com/kanjielu/jeeves/blob/master/images/login1.png?raw=true "Await Scanning")
 
-After scanning and confirming login
+扫过二维码，点击确认登录后
 
 ![alt text](https://github.com/kanjielu/jeeves/blob/master/images/login2.png?raw=true "Login Successfully")
 
-### Login process
+### 登录过程
 ![alt text](https://github.com/kanjielu/jeeves/blob/master/images/login-process-diagram.png?raw=true "Login process diagram")
 
-### Example
-`com.hammer.lei.MessageHandlerImpl` is provided as an example of jeeves. You can modify the code in `MessageHandlerImpl` yourself or create another Spring Bean of `MessageHandler` to meet your requirements.
+### 示例
+`com.hammer.lei.MessageHandlerImpl` 是一个jeeves默认提供的一个示例程序。如果需要自定义修改，可以直接改动 `MessageHandlerImpl` 的代码，或者创建另一个继承`MessageHandler`的Spring Bean。
 
-The default behaviors that are set in `MessageHandlerImpl` are:
-* Auto-save thumb images in image messages to local disk.
-* Auto-reply plain text messages.
-* Accept all friend invitations.
-* After accepting friend invitations, set alias to the friend.
-* Log for all other events.
+已经在 `MessageHandlerImpl` 设置的jeeves行为有:
+* 自动将消息里的缩略图存在运行环境本地；
+* 自动回复1对1的文本消息；
+* 接受任何人的好友邀请；
+* 在接受好友邀请后，为他设置一个别名；
+* 对于其他的事件，记录日志。
 
-## Usages
-### Events
-A bean that implements `MessageHandler` will be notified on all the following events.
+## 如何使用
+### 事件
+只要一个Spring Bean继承了`MessageHandler`，它会收到如下消息。
 
-#### Text message
+#### 文本消息
 ```java
 void onReceivingPrivateTextMessage(Message message);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `message` | received message |
+| `message` | 收到的消息 |
 
-#### Image message
+#### 图片消息
 ```java
 void onReceivingPrivateTextMessage(Message message, String thumbImageUrl, String fullImageUrl);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `message` | received message |
-|`thumbImageUrl`| url of image in small size|
-|`fullImageUrl`| url of image in full size|
+| `message` | 收到的消息 |
+|`thumbImageUrl`| 缩略图URL |
+|`fullImageUrl`| 原图URL |
 
-#### ChatRoom text message
+#### 聊天群文本消息
 ```java
 void onReceivingChatRoomTextMessage(Message message);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `message` | received message |
+| `message` | 收到的消息 |
 
-#### ChatRoom image message
+#### 聊天群图片消息
 ```java
 void onReceivingChatRoomImageMessage(Message message, String thumbImageUrl, String fullImageUrl);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `message` | received message |
-|`thumbImageUrl`| url of image in small size|
-|`fullImageUrl`| url of image in full size|
+| `message` | 收到的消息 |
+|`thumbImageUrl`| 缩略图URL |
+|`fullImageUrl`| 原图URL |
 
-#### Received a friend invitation
+#### 收到加好友邀请
 ```java
 boolean onReceivingFriendInvitation(RecommendInfo info);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `RecommendInfo` | friend invitation infomation |
+| `RecommendInfo` | 加好友邀请 |
 
-| Returns|
+| 返回值 |
 | --- |
-| true if to accept the invitation  ( type:`boolean` )|
+| 如果接受该好友请求，则返回true。否则返回false  ( type:`boolean` )|
 
-#### Callback after accepting a friend invitation
+#### 接受了好友邀请后的回调
 ```java
 boolean postAcceptFriendInvitation(Message message);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `message` | friend invitation message |
+| `message` | 加好友邀请 |
 
-#### New chatrooms found
+#### 发现新的聊天群
 ```java
 void onNewChatRoomsFound(Set<Contact> chatRooms);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `chatRooms` | a list of new chatrooms |
+| `chatRooms` | 新的聊天群 |
 
-#### Chatrooms deleted
+#### 聊天群被删除
 ```java
 void onChatRoomsDeleted(Set<Contact> chatRooms);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `chatRooms` | a list of chatrooms that are deleted |
+| `chatRooms` | 被删除的聊天群 |
 
-#### Members changed in a chatroom
+#### 聊天群的用户有变动
 ```java
 void onChatRoomMembersChanged(Contact chatRoom, Set<ChatRoomMember> membersJoined, Set<ChatRoomMember> membersLeft);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `chatRoom` | the chatroom where members changed happened |
-| `membersJoined` | a list of members that joined the chatroom |
-| `membersLeft` | a list of members that left the chatroom |
+| `chatRoom` | 发生变动的聊天群 |
+| `membersJoined` | 新增人员 |
+| `membersLeft` | 离群人员 |
 
-#### New friends found
+#### 发现新好友
 ```java
 void onNewFriendsFound(Set<Contact> contacts);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
 | `contacts` | a list of new friends |
 
-#### Friends deleted
+#### 好友被删除
 ```java
 void onFriendsDeleted(Set<Contact> contacts);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `contacts` | a list of friends that are deleted |
+| `contacts` | 被删除的好友 |
 
-#### New media platforms found
+#### 发现新的公众号
 ```java
 void onNewMediaPlatformsFound(Set<Contact> mps);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `mps` | a list of new media platforms |
+| `mps` | 新的公众号 |
 
-#### Media platforms deleted
+#### 公众号被删除
 ```java
 void onMediaPlatformsDeleted(Set<Contact> mps);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `mps` | a list of media platforms that are deleted |
+| `mps` | 被删除的公众号 |
 
-#### Red packet received
+#### 收到红包
 ```java
 void onRedPacketReceived(Contact contact);
 ```
 
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `contact` | where the red packet is recevied |
+| `contact` | 发红包的好友或者群 |
 
 ### API
-`WechatHttpService` has provided a bundle of apis that you can use to interact with the server.
+`WechatHttpService` 已经提供了各式各样的API供您使用。
 
-#### Get all the contacts
+#### 获取所有联系人、群、公众号
 ```java
 Set<Contact> getContact()
 ```
-| Returns |
+| 返回值 |
 | --- |
-| all the contacts, including friends, chatrooms and media platforms  ( type: `Set<Contact>` )|
+| 所有联系人、群、公众号  ( type: `Set<Contact>` )|
 
-#### Get all the members in given chatrooms
+#### 获取聊天群里的所有成员
 ```java
 Set<Contact> batchGetContact(Set<String> list)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `list` | the list of usernames of chatrooms |
+| `list` | 所需查询成员的聊天群的userName列表 |
 
-| Returns |
+| 返回值 |
 | --- |
-| chatrooms populated with all the members ( type: `Set<Contact>` )|
+| 查询的聊天群，每个聊天群已经包含了成员信息 ( type: `Set<Contact>` )|
 
-#### Send plain text
+#### 发送文本消息
 ```java
 void sendText(String userName, String content)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `userName` | the username of the contact that you send message to |
-| `content` | the content of the message |
+| `userName` | 对方的username |
+| `content` | 文本消息内容 |
 
-#### Set alias to given contact
+#### 为一个联系人设置备注
 ```java
 void setAlias(String userName, String newAlias)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `userName` | the username of the contact that you set alias to |
-| `newAlias` | the alias |
+| `userName` | 需要设置备注的联系人的username |
+| `newAlias` | 新备注 |
 
-#### logout
+#### 登出
 ```java
 void logout()
 ```
 
-#### Create a chatroom
+#### 创建一个新群
 ```java
 void createChatRoom(String[] userNames, String topic)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `userNames` | the usernames of the contacts who are invited to the chatroom |
-| `topic` | the topic(or nickname) |
+| `userNames` | 需要加入该新群的联系人名单 |
+| `topic` | 群名称 |
 
-#### Invite a contact to a certain chatroom
+#### 邀请某个联系人加入群
 ```java
 void addChatRoomMember(String chatRoomUserName, String userName)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `chatRoomUserName` | chatroom username |
-| `userName` | contact username |
+| `chatRoomUserName` | 群的username |
+| `userName` | 联系人的username |
 
-#### Delete a contact from a certain chatroom (if you're the owner!)
+#### 将一个成员踢出群（需要群主权限）
 ```java
 void deleteChatRoomMember(String chatRoomUserName, String userName)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `chatRoomUserName` | chatroom username |
-| `userName` | member username |
+| `chatRoomUserName` | 群的username |
+| `userName` | 被踢成员的username |
 
-#### Download images in the conversation
+#### 下载聊天信息中的图片
 
-Note that it's better not to download image directly. This method has included cookies in the request.
+请注意：最好使用这个方法下载图片，因为它在请求时会携带所需的cookie信息。
 
 ```java
 byte[] downloadImage(String url)
 ```
-| Parameters | Meaning |
+| 参数 | 含义 |
 | --- | --- |
-| `url` | the url of the image |
+| `url` | 图片URL |
 
-| Returns |
+| 返回值 |
 | --- |
-| the data of the image  ( type: `byte[]` )|
+| 图片的二进制数据  ( type: `byte[]` )|
 
 ## FAQ
-> Q: What protocols is jeeves running on?
+> Q: Jeeves使用了哪种微信协议？
 
-A: Jeeves is running on WeChat web protocols.
+A: Jeeves是使用Web微信的协议。
 
-> Q: How is jeeves different from other WeChat bots?
+> Q: Jeeves和其他的微信机器人有何不同？
 
-A: Jeeves is aimed to disguise itself as a normal web WeChat app. So we value **details**. Jeeves not only submits requests which are essential to login process, but also submits those are used for cross-platform status synchronization, status report and so on. The more details jeeves imitate, the safer your account is. Jeeves provides the following imitations.
-* Jeeves starts login process with requesting the login page (default as https://wx.qq.com) while most other bots skip directly to getting uuid.
-* Jeeves stores all the cookies carefully. It evens brings cookies in a request for getting images, which makes the request look like it's from a real browser. 
-* During the login process, when the QR code is expired, jeeves will start over the whole login process to get a new QR code. But in the following requests, a `refreshTimes` cookie is inserted, which indicates how many times that jeeves has started over. This is the way a **real** web WeChat app works.
-* Jeeves knows how to generate a random code/timestamp just as web WeChat do. We've studied some javascript code of web WeChat.
-* A `statusNotify` request with `StatusNotifyCode.READED` is used to notify the mobile WeChat app that all the messages in a given conversation have been read. Jeeves takes care of it for you. When you send a plain text message to a contact, jeeves would check if there're any unread messages in the conversation between you and the contact. If true, jeeves will first send out `statusNotify` to mark all these message read prior to the message request, which makes sense in a real world case.
+A: Jeeves的目标就是把自己伪装成一个普通的Web微信客户端，因此我们很重视细节。Jeeves除了会发送登录流程中必需的请求，还会发送其他的一些请求，例如：跨平台的状态同步请求，客户端状态上报请求等。Jeeves能模拟的细节越多，您的账号就越安全。当前，Jeeves已经能模拟但不限于以下几点：
 
-> Q: What can I do using jeeves?
+* 登录流程中，首先请求[登录页面](https://wx.qq.com)。一个正常的客户端，一定是先请求登录页面，然后再用javascript开始请求服务器的，但是大多数微信机器人都没有这么做，他们直接跳到获取UUID的步骤了。
 
-A: Jeeves is a perfect tool if you'd like to store all the messages locally. As a mischief, you can send the messages that others have recalled back to chatroom. Use your imagination!
+* Jeeves保存了绝大多数的cookie信息，甚至在请求图片的时候，也会携带cookie信息，尽可能地模拟浏览器的真实行为。 
 
-> Q: What can't jeeves do?
+* 在登录过程中，如果二维码过期了，jeeves会从头启动登录流程，获取新的二维码。在这个过程中，会加入一个`refreshTimes`的cookie信息。该信息标识了Web微信客户端已经第几次重新获取二维码。Jeeves的这个行为，就是**真实环境**中浏览器客户端的行为。
 
-A: Jeeves is still in masterelopment. Some complicated features such as sending an image is still in the todo list. Find all the available events and apis in the [Usages](#usages).
+* Jeeves知道如何正确生成随机数和随机时间戳，因为我们研读过Web微信的javascript代码。
 
-> Q: Can jeeves prevent itself from disconnecting from server?
+* 一个状态上报请求，如果带有`StatusNotifyCode.READED`，那这个请求是为了告诉手机移动端，该会话的所有消息都已读了。Jeeves会替您检查，并在必要的时候发出这个请求。每当您发一条消息的时候，jeeves都会检查，在这个会话中，是否之前有未读消息。如果有的话，它会在真正的聊天消息发出去之前，发送状态上报请求。这是正确且合理的。试想，在使用Web微信聊天的过程中，您是否可能在还没有读之前消息的状态下继续发送消息呢？
 
-A: Jeeves can't guarantee it. We're still working on it. Usually jeeves can stay for hours, up to 2 days. To stay connected as long as possible, **DON'T** have any unusual behaviors that real humans don't have. For example, sending 100 messages in one second.
+> Q: Jeeves能做什么？
 
-> Q: Why is my account blocked on web WeChat?
+A: Jeeves可以很好的将您的聊天记录按照您的要求存到本地磁盘。或者可以玩一个恶作剧：将别人已经撤回的消息重新发出来。发挥自己的想象吧！
 
-A: It depends on lots of factors. Tencent has statistics of all the behaviors and data of your account. Some unusual behaviors would put your account in risk. For example, sending messages to a person doesn't exist or you're not allowed to chat with. Additionally, Tencent has a list of the limits on all kinds of actions that an account can take. If your account exceeds the boundary, it could be blocked. For example, too many times of login in a short time.
+> Q: Jeeves不能做什么?
 
-## Known Issues
-* Jeeves is using [ZXing](https://github.com/zxing/zxing) for printing QR in terminal. It's seldom that `com.google.zxing.NotFoundException` is thrown. We're still investigating into it. To workaround it, just restart jeeves.
+A: Jeeves有些功能还在开发。例如上传图片等功能还没有完成。可以在[Usages](#usages)中查看有哪些功能已经完成了。
 
-## Warning
-Using any WeChat bots, including jeeves, could cause your account be blocked. It's at your own risk.
+> Q: Jeeves能不断线吗?
 
-## Credits
-Jeeves project is inspired by [ItChat](https://github.com/littlecodersh/ItChat) and [WeixinBot](https://github.com/Urinx/WeixinBot).
+A: 不能保证。通常来说，jeeves可以保证在线几个小时到两天。为了尽可能长地在线，请不要有一些不正常的行为，例如在1秒内发送100条消息。
 
-## Bugs and Feedback
-For bugs, questions and discussions please use the [Github Issues](https://github.com/kanjielu/jeeves/issues).
+> Q: 为什么我的微信账号被禁止登录了?
 
-## License
+A: 有很多方面的原因。腾讯对您账号的使用行为和数据有各种统计。如果您有一些不正常的行为，就有可能被禁止登录。例如给一个不存在的人发送消息，或者给一个您根本不应该可以聊天的人（例如非好友）发送消息。 除此之外，腾讯对每个账户的各种日常行为设定一个上限次数。如果您对账号超过了这个次数，也有可能被认为是不正常使用，导致被禁。例如在短时间内登录次数太多。
+
+## 已知问题
+* Jeeves 使用 [ZXing](https://github.com/zxing/zxing) 来在终端输出二维码。在比较少的情况下，ZXing会抛出`com.google.zxing.NotFoundException`。该问题还在调查中，一般来说，重启jeeves，获得新的二维码就避开这个问题。 
+
+## 警告
+使用任何微信机器人，包括jeeves，都有可能导致您的账号被禁用。Jeeves不对此负责，请谨慎使用。
+
+## 感谢
+Jeeves 是受到 [ItChat](https://github.com/littlecodersh/ItChat) and [WeixinBot](https://github.com/Urinx/WeixinBot) 的启发而创建的。
+
+## 问题反馈
+有任何bug或者疑问，请使用 [Github Issues](https://github.com/kanjielu/jeeves/issues).
+
+## 协议
 
 [MIT](LICENSE)
