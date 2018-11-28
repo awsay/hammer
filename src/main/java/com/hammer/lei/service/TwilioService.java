@@ -19,8 +19,8 @@ import java.net.URISyntaxException;
 public class TwilioService {
 
   //https://www.twilio.com上申请的sid和token，可以在Dashboard页面看到
-  private final String ACCOUNT_SID = "xxxxx";
-  private final String AUTH_TOKEN = "xxxxx";
+  private final String ACCOUNT_SID = "AC1f21d468109b436228cc8f2ed36cc58c";
+  private final String AUTH_TOKEN = "7a05be61696697b6869efcaef706a5ac";
 
   public String callSomebody(String phoneNumber) throws URISyntaxException {
     System.out.println("call some body start!");

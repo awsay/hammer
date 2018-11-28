@@ -81,7 +81,7 @@ public class MessageHandlerImpl implements MessageHandler {
         }
         if(StringUtils.isNoneEmpty(listenChatRooms) && ArrayUtils.contains(listenChatRooms,message.getFromUserName()) && MapUtils.isNotEmpty(onCalls)){
             WechatConfig wechatConfig = onCalls.get(message.getFromUserName());
-            if(content.contains(wechatConfig.getStopCallKeyWords()) ){
+            if(content.toLowerCase().contains(wechatConfig.getStopCallKeyWords().toLowerCase()) ){
                 cache.put(message.getFromUserName(),message.getContent().substring(0,message.getContent().indexOf(":")));
             }else if(cache5.getIfPresent(message.getFromUserName())!= null){
                 return;
@@ -101,7 +101,8 @@ public class MessageHandlerImpl implements MessageHandler {
                     @Override
                     public void run() {
                         try {
-                            message.setContent("[群聊机器人自动回复]：" + content + "\n电话"+wechatConfig.getOnCall1Name()+"中。。。");
+                            message.setContent("[This is an automated response...]：" + "\nThe wechat robot will call "+wechatConfig.getOnCall1Name()+" up.\n" +
+                                "The wechat robot is developed by feifei.lei(13627268272).");
                             replyMessage(message);
                             twilioService.callSomebody(wechatConfig.getOnCall1Phone());
                         }catch (Exception e){
